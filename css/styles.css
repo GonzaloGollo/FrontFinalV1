@@ -1,0 +1,494 @@
+*{
+margin: 0px;
+border-style:border-box;
+text-decoration: none;
+font-size: 10px;
+font-family: 'Be Vietnam Pro', sans-serif;
+
+}
+
+body{
+position: relative;
+
+}
+
+.marcadeAgua{
+    position: absolute;
+    right: -30rem;
+    z-index: -10;
+
+
+}
+
+header {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+margin-top: 7.5rem;
+/* width: 100%; */
+}
+
+header ul {
+list-style: none;
+display: flex;
+justify-content: space-evenly;
+gap: 2rem;
+
+}
+
+header ul li {
+font-size: 1.3rem;
+}
+
+.menu{
+display: none;
+}
+
+
+
+/* //////////////////////////////////////////////////// */
+
+main {
+display: flex;
+flex-direction:column;
+justify-content: space-evenly;
+align-items: center;
+gap: 4rem;
+margin-top: 4rem;
+}
+
+
+.vitrina{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+flex-wrap: wrap;
+
+
+}
+
+
+/* //////////////////////////////////////////////////// */
+.mainIzq1{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 43.9rem;
+    gap: 2.8rem;
+}
+
+h1 {
+    font-size: 5.8rem;
+}
+
+p{
+    width: 35.1rem;
+    font-size: 1.6rem;
+    /* margin-top: 2rem; */
+}
+
+h2 {
+    width: 42rem;
+}
+
+
+
+button.btNaranja {
+    background:   #F3603B;
+    width: 134px;
+    height: 44px;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 5rem;
+    box-shadow: 0px 4px 8px rgba(242, 97, 59, 0.5);
+    font-size: 1.38rem;
+}
+
+
+.btBlanco {
+    background:  #FFFFFF;
+    color: #F3603B;
+    width: 134px;
+    height: 44px;
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+
+    font-size: 1.38rem;
+
+}
+
+
+/* //////////////////////////////////////////////////// */
+
+main .vitrina img {
+max-width: 100%;
+background-size: cover;
+}
+
+/* //////////////////////////////////////////////////// */
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: initial;
+    flex-wrap: wrap;
+
+    gap: 2rem;
+}
+    section div h2{
+    font-size: 3.6rem;
+
+    }
+    section div p {
+        font-size: 1.6rem;
+    }
+
+/* //////////////////////////////////////////////////// */h
+    .pqtTxtArticulos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: initial;
+
+    }
+
+
+        .articulos {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: initial;
+            gap: 2rem;
+        }
+
+              .articulos h4 {
+                font-size: 1.6rem;
+
+                }
+
+
+                section div.pqtTxtArticulos p {
+                    font-size: 1.63;
+                    color: #B3B2B7;
+
+                }
+
+                .articulos h3 {
+                    background:   #F3603B;
+                    height: 25px;
+                    padding: 1rem 2.5rem;
+                    border: none;
+                    color: #FFFFFF;
+                    border-radius: 3rem;
+                    box-shadow: 0px 4px 8px rgba(242, 97, 59, 0.5);
+                    font-size: 1.6rem;
+                }
+/* //////////////////////////////////////////////////// */
+
+.testimonios {
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+gap: 5rem;
+
+}
+
+.testimonios h2 {
+font-size:  3.92rem; ;
+
+}
+
+.segmento{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items:flex-start;
+flex-wrap: wrap;
+gap: 1vh;
+}
+
+.individuo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FAFAFA;
+    position: relative;
+    width: 44.5rem;
+    height: 21.9rem;
+    margin-top: 4rem;
+    /* padding-top: 4rem; */
+
+}
+
+
+.FotoCircular{
+    width: 70px;
+    position: absolute;
+    top: -35px;
+    /* top: 120px; */
+    
+  
+}
+
+.individuo h5 {
+font-size: 1.6rem;
+margin-top: 2rem;
+
+}
+
+.individuo p {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #B3B2B7;
+        text-align: center;
+        margin: 10.2px 2.1rem 1rem 1rem;
+}
+
+
+/* //////////////////////////////////////////////////// */
+
+.barraNaranja {
+background-color: #F3603B;
+color: #FFFFFF;
+width: 100%;
+height: 224px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.barraNaranja h3 {
+ font-size: 4rem;
+ width: 46rem;
+}
+
+/* //////////////////////////////////////////////////// */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+    /* height: 247px; */
+    background-color: #1E1E26;
+    color: #FFFFFF;
+    /* width: 100%; */
+}
+
+.logoyRedes {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6.6rem;
+
+}
+
+
+.redes img{
+margin: 0.4rem;
+    gap: 3rem;
+
+}
+/* //////////////////////////////////////////////////// */
+footer ul {
+    list-style: none;
+}
+footer ul li {
+    padding: 1.2rem;
+}
+
+.FormyCopy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 6.6rem;
+    }
+
+
+footer p {
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #8C8C94;
+}
+
+/* ////////////     Form      /////////////////// */
+
+
+input {
+width: 201px;
+height: 44px;
+border: none;
+border-radius: 5rem;
+padding-left:20px;
+
+}
+
+form button {
+    background:   #F3603B;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 5rem;
+    padding: 1.15rem 2.25rem;
+    margin-left: 0.9rem;
+}
+
+     
+
+/* ////////////PseudoClases // Pseudoselectores // Animaciones ///////////////////// */
+
+header ul li:hover{
+    color: rgb(141, 141, 141);
+    /* color: rgb(168, 167, 173); */
+cursor: pointer;
+transform:scale(1.4);
+padding:0rem 0.5rem 0rem 0.5rem;
+text-shadow: 0.2px 0.2px 2px rgb(233, 233, 233);
+}
+
+.menu:active{/* Active decor  */
+    transform:scale(1);
+}
+
+.menu:hover{
+    color: rgb(141, 141, 141);
+    /* color: rgb(168, 167, 173); */
+cursor: pointer;
+transform:scale(1.4);
+padding:0rem 0.5rem 0rem 0.5rem;
+text-shadow: 0.2px 0.2px 2px rgb(233, 233, 233);
+}
+
+header ul li:active{/* Active decor  */
+    transform:scale(1);
+}
+
+
+.btNaranja:hover {
+    background:  rgb(249, 143, 117);
+    cursor: pointer;
+    transform:scale(1.1);
+}
+
+.btNaranja:active{
+    transform:scale(1);
+    background:  #F3603B;   
+    cursor:pointer;
+    box-shadow: 2px 2px 50px 20px rgb(189, 189, 189);
+}
+
+/* 
+main div img:hover {
+    transform:scale(1.1);
+    margin-left: 1rem;
+} */
+
+
+.btBlanco:hover {
+    color: rgb(242, 164, 162);
+    cursor: pointer;
+    transform:scale(1.1);
+}
+
+.btBlanco:active {
+    color: #F3603B;   
+    cursor: pointer;
+    transform:scale(1);
+    box-shadow: 2px 2px 40px 5px  #ff8060;  
+}
+
+footer ul li:hover{
+    color: #F3603B;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+footer ul li:active{
+      font-weight: 400;
+}
+
+footer ul li a:visited{
+    color:rgb(242, 164, 162);
+}
+
+
+form button:hover{
+    background:  rgb(249, 143, 117);
+    transform:scale(1.1);
+    cursor: pointer;
+}
+
+form button:active{
+    background: #F3603B;   
+    cursor: pointer;
+    transform:scale(1);
+    box-shadow: 2px 2px 40px 5px   rgb(63, 65, 82);    
+}
+
+
+
+input:focus{
+    font-size: 1.5rem;
+    
+    }
+
+    input:valid {
+        background-color: rgb(92, 255, 173);
+        font-weight: 500;
+    }
+    
+    input:invalid {
+        border-color:#F3603B;
+        color: #F3603B;
+        font-weight: 500;
+    }
+    
+   /* /////////////////////////////////////////////// */
+
+.otrasredes{
+
+    width: 2rem;
+    height: 2rem;
+
+}
+
+
+
+
+/* //////////////MediaQueris///////////////// */
+
+
+@media (max-width: 375px){
+
+    header {
+    justify-content: space-between;
+
+    margin: 4rem 1rem 3rem 2.5rem;
+    }
+
+    header nav {
+        display: none;
+        }
+    header button {
+        display: none;
+    }
+
+    .menu{
+
+        display: inline;
+        /* margin-right: 2rem; */
+
+    }
+
+
+
+
+}
