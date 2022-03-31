@@ -338,7 +338,6 @@ body{
             width: 44.5rem;
             height: 21.9rem;
             margin-top: 4rem;
-            /* padding-top: 4rem; */
         }
 
             .FotoCircular{
@@ -419,10 +418,10 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items:center;
+    align-items:flex-start;
     flex-wrap: wrap;
     background-color: #1E1E26;
-    padding: 2.5rem 10rem 2.5rem 10rem;
+    padding: 6rem 10rem 2.5rem 10rem;
 }
 
     .logoyRedes {
@@ -453,17 +452,19 @@ footer {
     footer .listaxcel {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: flex-start;
-        gap: 6.6rem;
+        width: 38%;
+        /* gap: 50%; */
     }
 
         footer .listaxcel ul {
             list-style: none;
+            padding: 0px;
         }
         
             footer .listaxcel ul li {
-                    padding: 1.2rem;  
+                    padding-bottom: 3rem;  
                 }
                     footer div ul li a {
                         font-size: 1.4rem;
@@ -792,39 +793,69 @@ gap: 2rem;
         width: 85%;        
     }
   /* //////////////////////////////////////// */
-    footer{
-        align-items: center;
-        text-align: center;
-        justify-self: center;
-    }
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    background-color: #1E1E26;
+    /* gap: rem; */
+    padding: 4.5rem 1rem 2rem 2rem;
+}
     
         footer .listaxcel {    
-            gap: 7rem;
-            align-items: flex-start;
-            justify-content:space-between;
+            /* margin-top: 2rem; */
+            justify-content: space-between;
+            align-items:flex-start;
+            width: 80%;
+            padding-top: 3rem;
+            /* gap: 4rem; */
         }
 
             footer .listaxcel ul {
                 padding: 0px;
             }
 
+            footer .listaxcel ul li {
+                padding-bottom: 2rem;  
+            }
+
+            footer div ul li a {
+                font-size: 1.3rem;
+                font-weight: 300;
+            }
+
             footer .redes{
                 width: 100%;
             }
             footer .redes i{
-                font-size: 30px;
-                margin: 1.77rem;
+                font-size: 35px;
+                margin: 1.60rem;
                 color: #FAFAFA;
                 height: 100%;            
                 }
     footer .FormyCopy p{
         display: none;
     }
+
+    footer .FormyCopy {
+        justify-content: center;
+    }
+    
+    .logoyRedes {
+        display: flex;
+      align-items: center;
+        justify-content: space-evenly;
+        gap: 3.5rem;
+    }
     
         .logoyRedes::before{
             content: "Copyright 2020. All Rights Reserved";
             color: #B3B2B7;   
             font-size: 1.25rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
         }
         
         .testimonios h2{                
