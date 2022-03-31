@@ -52,7 +52,6 @@ body{
         rotate: 50deg;
         transform: scale(0.2);
         z-index: -10;
-        /* animation: move 1s ease-in-out infinite alternate; */
         -webkit-animation: kenburns-top 10s ease-in-out infinite both;
                 animation: kenburns-top 10s ease-in-out infinite both;
     }
@@ -96,41 +95,41 @@ body{
         font-size: 1.38rem;
     }
 
-    button.btNaranja:active{
-        cursor:pointer;
-        background:rgb(242, 164, 162);
-        -webkit-animation: scale-up-top 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-        animation: scale-up-top 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    }
+        button.btNaranja:active{
+            cursor:pointer;
+            background:rgb(242, 164, 162);
+            -webkit-animation: scale-up-top 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: scale-up-top 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
 
-        @-webkit-keyframes scale-up-top {
-            0% {
-            -webkit-transform: scale(0.9);
-                    transform: scale(0.9);
-            -webkit-transform-origin: 50% 0%;
-                    transform-origin: 50% 0%;
+            @-webkit-keyframes scale-up-top {
+                0% {
+                -webkit-transform: scale(0.9);
+                        transform: scale(0.9);
+                -webkit-transform-origin: 50% 0%;
+                        transform-origin: 50% 0%;
+                }
+                100% {
+                -webkit-transform: scale(1);
+                        transform: scale(1);
+                -webkit-transform-origin: 50% 0%;
+                        transform-origin: 50% 0%;
+                }
             }
-            100% {
-            -webkit-transform: scale(1);
-                    transform: scale(1);
-            -webkit-transform-origin: 50% 0%;
-                    transform-origin: 50% 0%;
+            @keyframes scale-up-top {
+                0% {
+                -webkit-transform: scale(0.9);
+                        transform: scale(0.9);
+                -webkit-transform-origin: 50% 0%;
+                        transform-origin: 50% 0%;
+                }
+                100% {
+                -webkit-transform: scale(1);
+                        transform: scale(1);
+                -webkit-transform-origin: 50% 0%;
+                        transform-origin: 50% 0%;
+                }
             }
-        }
-        @keyframes scale-up-top {
-            0% {
-            -webkit-transform: scale(0.9);
-                    transform: scale(0.9);
-            -webkit-transform-origin: 50% 0%;
-                    transform-origin: 50% 0%;
-            }
-            100% {
-            -webkit-transform: scale(1);
-                    transform: scale(1);
-            -webkit-transform-origin: 50% 0%;
-                    transform-origin: 50% 0%;
-            }
-        }
 
     .btNaranja:hover {
         background:  #f56844;
@@ -139,7 +138,6 @@ body{
         transition: all 0.1s ease-in-out;
     
     }
-
     /* //////////////////////////////////////////////////// */
     header {
         display: flex;
@@ -149,51 +147,46 @@ body{
         gap: 3rem;
     }
 
-    header ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-evenly;
-        gap: 2.5rem;
-        padding: 0PX;
-    }
-
-    header ul li {
-        font-size: 1.35rem;
-        color: rgb(35, 44, 81);
-        font-weight: 500;
-        /* padding:0rem 0.5rem 0rem 0.5rem; */
-    }
-
-    header ul li:hover{
-        color: rgb(141, 141, 141);
-        cursor: pointer;
-        /* transform:scale(1.4); */
-        transform: scale(1.3) translateY(-5px); 
-        transition: all 0.3s ease-in-out;
-        padding:0rem -0.1rem 0rem -0.1rem;
-        text-shadow: 0.2px 0.2px 2px rgb(233, 233, 233);
-    }
-    
-    header ul li:active{/* Active decor  */
-        transform: scale(0.9) translateY(2px); 
-        transition: all 0.1s ease-in-out;    }
-    
-    .menu{
-        display: none;
-    }
-    
-       
-
-        .menu:hover{
-            color: rgb(141, 141, 141);
-            /* color: rgb(168, 167, 173); */
-            cursor: pointer;
-            transform: scale(1.1) translateY(-5px); 
-            transition: all 0.1s ease-in-out;            
-            padding:0rem 0.5rem 0rem 0.5rem;
-            text-shadow: 0.2px 0.2px 2px rgb(233, 233, 233);
+        header ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 2.5rem;
+            padding: 0PX;
         }
 
+            header ul li {
+                font-size: 1.35rem;
+                color: rgb(35, 44, 81);
+                font-weight: 500;
+            }
+
+                header ul li:hover{
+                    color: rgb(141, 141, 141);
+                    cursor: pointer;
+                    transform: scale(1.3) translateY(-4px); 
+                    transition: all 0.3s ease-in-out;
+                    padding:0rem -0.1rem 0rem -0.1rem;
+                    /* text-shadow: 0.2px 0.2px 2px rgb(214, 212, 212); */
+                }
+            
+                header ul li:active{
+                    transform: scale(0.9) translateY(2px); 
+                    transition: all 0.1s ease-in-out;    }
+                    
+                .menu{
+                    display: none;
+                } 
+
+                    .menu:hover{
+                            color: rgb(141, 141, 141);
+                            /* color: rgb(168, 167, 173); */
+                            cursor: pointer;
+                            transform: scale(1.1) translateY(-5px); 
+                            transition: all 0.1s ease-in-out;            
+                            padding:0rem 0.5rem 0rem 0.5rem;
+                            text-shadow: 0.2px 0.2px 2px rgb(233, 233, 233);
+                        }
 /* //////////////////////////////////////////////////// */
     main .vitrina{
         display: flex;
@@ -204,31 +197,31 @@ body{
         margin: 5rem 0rem 5rem 0rem;
     }
 
-    .mainIzq1{
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        align-items: left;
-        width: 43.9rem;
-        gap: 2.8rem;
-    }
+        .mainIzq1{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: left;
+            width: 43.9rem;
+            gap: 2.8rem;
+        }
 
-    main .vitrina .mainIzq1 h1 {
-        font-size: 5.8rem;
-        color: rgb(35, 44, 81);
-    }
+            main .vitrina .mainIzq1 h1 {
+                font-size: 5.8rem;
+                color: rgb(35, 44, 81);
+            }
 
-    main .vitrina .mainIzq1 p.comentario{
-        width: 35.1rem;
-        font-size: 1.6rem;
-        color: #B3B2B7;
-        margin-top: 2rem;
-    }
+            main .vitrina .mainIzq1 p.comentario{
+                width: 35.1rem;
+                font-size: 1.6rem;
+                color: #B3B2B7;
+                margin-top: 2rem;
+            }
 
-   main .vitrina img { /*Cambiar por background image y no poner el img en el hmtl*/
-        max-width: 100%;
-        background-size: cover;
-    }
+        main .vitrina img { 
+                max-width: 100%;
+                background-size: cover;
+            }
 
 /* //////////////////////////////////////////////////// */
 
@@ -241,67 +234,67 @@ body{
         margin-bottom: 5rem;
     }
 
-    .BlqTituloCopy{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
+        Section.SecManage .BlqTituloCopy{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;            
+        }
 
-    .SecManage .BlqTituloCopy h2{ 
+            Section.SecManage .BlqTituloCopy h2 {
+                font-size: 3.6rem;
+                width: 42rem;
+                color: rgb(35, 44, 81);
+            }
 
-        font-size: 3.6rem;
-        width: 42rem;
-        color: rgb(35, 44, 81);
-    }
+            .SecManage .BlqTituloCopy p.comentario{
+                width: 35.1rem;
+                font-size: 1.6rem;
+                color: #B3B2B7;
+                margin-top: 2rem;
+            }
 
-    .SecManage .BlqTituloCopy p.comentario{
-        width: 35.1rem;
-        font-size: 1.6rem;
-        color: #B3B2B7;
-        margin-top: 2rem;
-    }
+        .SecManage .Blq3textos{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;  
+        }
 
-    .SecManage .Blq3textos{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;  
-    }
+            .SecManage .Blq3textos article{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin-top: 4.2rem;
+                gap: 1rem;
+                counter-increment:numerocontador;
+            }
+                .SecManage .Blq3textos article p {
+                    width: 43.7rem;
+                    font-size: 1.6rem;
+                    color: #B3B2B7;
+                    margin-top: 1rem;
+                    padding-left: 5.8rem;
+                }
+        
 
-    .SecManage .Blq3textos article p {
-        width: 43.7rem;
-        font-size: 1.6rem;
-        color: #B3B2B7;
-        margin-top: 1rem;
-        padding-left: 5.8rem;
-    }
-    .SecManage .Blq3textos article{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin-top: 4.2rem;
-        gap: 1rem;
-        counter-increment:numerocontador;
-    }
+                .SecManage .Blq3textos article h3::before{
+                    content:"0" counter(numerocontador);
+                    background: #F3603B;
+                    font-size: 1.6rem;
+                    padding: 1rem 2.6rem;
+                    color: #FAFAFA;
+                    border-radius: 3rem;
+                    position: relative;
+                    right: 2.5rem;
+                }
 
-    .SecManage .Blq3textos article h3::before{
-        content:"0" counter(numerocontador);
-        background: #F3603B;
-        font-size: 1.6rem;
-        padding: 1rem 2.6rem;
-        color: #FAFAFA;
-        border-radius: 3rem;
-        position: relative;
-        right: 2.5rem;
-    }
-
-    .SecManage .Blq3textos article h3 {
-        font-weight: 700;
-        font-size: 1.6rem;
-        color: rgb(35, 44, 81);
-        margin-left: 0.5rem;
-        border-bottom-left-radius: 3rem;
-        border-top-left-radius: 3rem;
-    }
+                    .SecManage .Blq3textos article h3 {
+                        font-weight: 700;
+                        font-size: 1.6rem;
+                        color: rgb(35, 44, 81);
+                        margin-left: 0.5rem;
+                        border-bottom-left-radius: 3rem;
+                        border-top-left-radius: 3rem;
+                    }
 
 /* //////////////////////////////////////////////////////////// */
     section.testimonios {
@@ -310,25 +303,26 @@ body{
         justify-content: space-evenly;
         align-items: center;
         gap: 5rem;
+        margin: 15rem 0rem;
     }
 
-    .testimonios h2 {
-        font-size:  3.92rem; ;
-        text-align: center;
-        align-items: center;
-        color: rgb(35, 44, 81);
-    }
+        section.testimonios h2 {
+                font-size:  3.92rem; ;
+                text-align: center;
+                align-items: center;
+                color: rgb(35, 44, 81);
+            }
 
-    .segmento{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items:flex-start;
-        flex-wrap: wrap;
-        gap: 1vh;
-    }
+            section .segmento{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items:flex-start;
+                flex-wrap: wrap;
+                gap: 1vh;
+            }
 
-        .individuo{
+            section .segmento .individuo{
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -340,18 +334,18 @@ body{
             margin-top: 4rem;
         }
 
-            .FotoCircular{
+        section .segmento .individuo .FotoCircular{
                 width: 70px;
                 position: absolute;
                 top: -35px;   
             }
 
-            .individuo h5 {
+            section .segmento .individuo h5 {
                 font-size: 1.6rem;
                 margin-top: 2rem;
             }
 
-            .individuo p {
+            section .segmento .individuo p {
                     font-weight: 500;
                     font-size: 1.6rem;
                     color: #B3B2B7;
@@ -359,7 +353,7 @@ body{
                     margin: 10.2px 2.1rem 1rem 1rem;
             }
 
-            .testimonios .carrousel {
+            .carrousel {
                 display: none;
             }
 
@@ -379,39 +373,39 @@ body{
     margin-top: 3rem;
 }
 
-.barraNaranja h2 {
-    font-size: 4rem;
-    width: 46rem;
-    color: #FAFAFA;
-}
+    .barraNaranja h2 {
+        font-size: 4rem;
+        width: 46rem;
+        color: #FAFAFA;
+    }
 
-.btBlanco {
-    background:  #FFFFFF;
-    color: #F3603B;
-    width: 134px;
-    height: 44px;
-    border: none;
-    border-radius: 5rem;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-    font-size: 1.38rem;
-}
+    .btBlanco {
+        background:  #FFFFFF;
+        color: #F3603B;
+        width: 134px;
+        height: 44px;
+        border: none;
+        border-radius: 5rem;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+        font-size: 1.38rem;
+    }
 
-.btBlanco:hover {
-    color: rgb(242, 164, 162);
-    cursor: pointer;
-    transform: scale(1.1) translateY(-5px); 
-    transition: all 0.1s ease-in-out;
-}
+        .btBlanco:hover {
+            color: rgb(242, 164, 162);
+            cursor: pointer;
+            transform: scale(1.1) translateY(-5px); 
+            transition: all 0.1s ease-in-out;
+        }
 
-.btBlanco:active {
-    color: #F3603B;   
-    cursor: pointer;
-    transform: scale(0.9) translateY(-2px); 
-        transition: all 0.1s ease-in-out;
-    box-shadow: 2px 2px 40px 5px  #ff8060;  
-    -webkit-animation: scale-up-top 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: scale-up-top 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
+        .btBlanco:active {
+            color: #F3603B;   
+            cursor: pointer;
+            transform: scale(0.9) translateY(-2px); 
+                transition: all 0.1s ease-in-out;
+            box-shadow: 2px 2px 40px 5px  #ff8060;  
+            -webkit-animation: scale-up-top 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: scale-up-top 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
 
 /* //////////////////////////////////////////////////// */
 footer {
@@ -441,7 +435,7 @@ footer {
             }
         
             footer .redes i:hover {
-                transform:scale(1.1);
+                transform:scale(1.2);
             }
         
             footer .redes i:active {
@@ -492,68 +486,68 @@ footer {
                     }
 
 /* ////////////     Form      /////////////////// */
-footer .FormyCopy {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    gap: 4rem;
-    align-items: flex-end;
-    text-align: right;
-    }
+    footer .FormyCopy {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 4rem;
+        align-items: flex-end;
+        text-align: right;
+        }
 
-footer .FormyCopy form input {
-    width: 20rem;
-    height: 44px;
-    border: none;
-    border-radius: 5rem;
-    padding-left:20px;
-}
+        footer .FormyCopy form input {
+            width: 20rem;
+            height: 44px;
+            border: none;
+            border-radius: 5rem;
+            padding-left:20px;
+        }
 
-footer .FormyCopy form button {
-    background:   #F3603B;
-    color: #FFFFFF;
-    font-size: 1.6rem;
-    border: none;
-    border-radius: 5rem;
-    padding: 1.15rem 2.25rem;
-    margin-left: 0.9rem;
-}     
+            footer .FormyCopy form button {
+                background:   #F3603B;
+                color: #FFFFFF;
+                font-size: 1.6rem;
+                border: none;
+                border-radius: 5rem;
+                padding: 1.15rem 2.25rem;
+                margin-left: 0.9rem;
+            }     
 
-footer .FormyCopy form button:hover{
-    background:  rgb(249, 143, 117);
-    transform: scale(1.2) translateY(-2px); 
-    transition: all 0.1s ease-in-out;
-    cursor: pointer;
-}
+                footer .FormyCopy form button:hover{
+                    background:  rgb(249, 143, 117);
+                    transform: scale(1.2) translateY(-2px); 
+                    transition: all 0.1s ease-in-out;
+                    cursor: pointer;
+                }
 
-footer .FormyCopy form button:active{
-    background: #F3603B;   
-    cursor: pointer;
-    transform: scale(0.95) translateY(1px); 
-    transition: all 0.1s ease-in-out;
-    box-shadow: 1px 1px 20px 3px   rgb(63, 65, 82);    
-}
+                footer .FormyCopy form button:active{
+                    background: #F3603B;   
+                    cursor: pointer;
+                    transform: scale(0.95) translateY(1px); 
+                    transition: all 0.1s ease-in-out;
+                    box-shadow: 1px 1px 20px 3px   rgb(63, 65, 82);    
+                }
 
-footer .FormyCopy form input:focus{
-    font-size: 1.5rem;    
-    }
+                footer .FormyCopy form input:focus{
+                    font-size: 1.5rem;    
+                    }
 
-    footer .FormyCopy form input:valid {
-        background-color: rgb(92, 255, 173);
-        font-weight: 500;
-    }
+                    footer .FormyCopy form input:valid {
+                        background-color: rgb(92, 255, 173);
+                        font-weight: 500;
+                    }
+                    
+                    footer .FormyCopy form input:invalid {
+                        border-color:#F3603B;
+                        color: #F3603B;
+                        font-weight: 500;
+                    }
     
-    footer .FormyCopy form input:invalid {
-        border-color:#F3603B;
-        color: #F3603B;
-        font-weight: 500;
-    }
-    
-    footer .FormyCopy p {
-        font-weight: 500;
-        font-size: 1.25rem;
-        color: #8C8C94;
-    }
+        footer .FormyCopy p {
+            font-weight: 500;
+            font-size: 1.25rem;
+            color: #8C8C94;
+        }
 /* //////////////MediaQueris///////////////// */
 @media (max-width: 1331px){
 
@@ -595,10 +589,11 @@ footer .FormyCopy {
             font-size: 3.7rem ;
         }
     /* ////////////////////////////////////// */
-    .individuo {
-        width: 85%;
-        padding: 2px;        
-    }
+        section .segmento .individuo {
+            
+            width: 85%;
+            padding: 2px;        
+        }
     /* ////////////////////////////////////// */
     
     .barraNaranja {
@@ -699,24 +694,24 @@ gap: 2rem;
         gap: 1rem;
     }
 
-    .SecManage .BlqTituloCopy h2{ 
-
-        font-size: 3.3rem;
-        width: 90%;
-        color: rgb(35, 44, 81);
-    }
-    /* //////////////////////////////////////// */
-    .BlqTituloCopy{
+    Section.SecManage .BlqTituloCopy{
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-between        
     }
-    /* //////////////////////////////////////// */
 
-    .SecManage .BlqTituloCopy p.comentario {
-        font-size: 1.3rem;
-        color: #B3B2B7;
-        width: 29rem;
-    }
+        Section.SecManage .BlqTituloCopy h2 { 
+
+            font-size: 3.3rem;
+            width: 90%;
+            color: rgb(35, 44, 81);
+        }
+
+
+        .SecManage .BlqTituloCopy p.comentario {
+            font-size: 1.3rem;
+            color: #B3B2B7;
+            width: 29rem;
+        }
         
     .SecManage .Blq3textos{
         display: flex;
@@ -727,15 +722,6 @@ gap: 2rem;
         padding-left: 1rem;
     }
 
-    .SecManage .Blq3textos article p {
-        width: 100%;
-        text-align: left;
-        font-size: 1.3rem;
-        color: #B3B2B7;
-        margin-top: 1rem;
-        padding-left: 0.7rem;
-    }
-
     .SecManage .Blq3textos article{
         display: flex;
         flex-direction: column;
@@ -744,123 +730,133 @@ gap: 2rem;
         gap: 1rem;
         counter-increment:numerocontador;
     }
+        .SecManage .Blq3textos article p {
+            width: 100%;
+            text-align: left;
+            font-size: 1.3rem;
+            color: #B3B2B7;
+            margin-top: 1rem;
+            padding-left: 0.8rem;
+            line-height: 2.8rem;
+        } 
 
     .SecManage .Blq3textos article h3::before{
-        content:counter(numerocontador);
+        /* content:counter(numerocontador); */
         background: #F3603B;
         font-size: 1.6rem;
         padding: 1rem 2.6rem;
         color: #FAFAFA;
         border-radius: 3rem;
         position: relative;
-        left: 0.1rem;
+        left: 0.0rem;
         margin-right: 0.5rem;
     }
 
     .SecManage .Blq3textos article h3 {
-       background-color: antiquewhite;
+       background-color:rgb(255, 240, 235);
        line-height: 3.5rem;
         width: 100%;
         text-align: left;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         color: rgb(35, 44, 81);       
     }
 /* //////////////////////////////////////////////////// */
-.testimonios h2 {
-    font-size:  3.3rem; 
-}
-
-.testimonios .individuo:nth-child(odd) { 
-    display: none;
-}
-
-.testimonios .carrousel {
-    display: unset;
-    color: #F3603B;
-}
-
-
-/* //////////////////////////////////////////////////// */
-
-.barraNaranja {    
-    padding: 3rem 2rem 3rem 2rem;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3rem;
-}
-    .barraNaranja h2 {
-        font-size: 3rem;
-        width: 85%;        
-    }
-  /* //////////////////////////////////////// */
-  footer {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items:center;
-    flex-wrap: wrap;
-    background-color: #1E1E26;
-    /* gap: rem; */
-    padding: 4.5rem 1rem 2rem 2rem;
-}
     
-        footer .listaxcel {    
-            /* margin-top: 2rem; */
-            justify-content: space-between;
-            align-items:flex-start;
-            width: 80%;
-            padding-top: 3rem;
-            /* gap: 4rem; */
+main .testimonios{
+    margin: 3.8rem 0rem;
+}
+
+    main .testimonios h2 {
+            font-size:  3.3rem; 
         }
 
-            footer .listaxcel ul {
-                padding: 0px;
-            }
-
-            footer .listaxcel ul li {
-                padding-bottom: 2rem;  
-            }
-
-            footer div ul li a {
-                font-size: 1.3rem;
-                font-weight: 300;
-            }
-
-            footer .redes{
-                width: 100%;
-            }
-            footer .redes i{
-                font-size: 35px;
-                margin: 1.60rem;
-                color: #FAFAFA;
-                height: 100%;            
-                }
-    footer .FormyCopy p{
+    main .testimonios .individuo:nth-child(odd) { 
         display: none;
     }
 
-    footer .FormyCopy {
-        justify-content: center;
+    main .testimonios .carrousel {
+        display: unset;
+        color: #F3603B;
     }
-    
-    .logoyRedes {
+/* //////////////////////////////////////////////////// */
+    main .barraNaranja {    
+        padding: 10rem 1.5rem 10rem 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    main .barraNaranja h2 {
+            font-size: 3.8rem;
+            font-weight: 500;
+            width: 95%;        
+        }
+/* //////////////////////////////////////// */
+    footer {
         display: flex;
-      align-items: center;
-        justify-content: space-evenly;
-        gap: 3.5rem;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items:center;
+        flex-wrap: wrap;
+        background-color: #1E1E26;
+        padding: 4.5rem 1rem 2rem 2rem;
     }
-    
-        .logoyRedes::before{
-            content: "Copyright 2020. All Rights Reserved";
-            color: #B3B2B7;   
-            font-size: 1.25rem;
-            font-weight: 300;
-            margin-bottom: 2rem;
+        
+            footer .listaxcel {    
+                justify-content: space-between;
+                align-items:flex-start;
+                width: 80%;
+                padding-top: 3rem;
+            }
+
+                footer .listaxcel ul {
+                    padding: 0px;
+                }
+
+                footer .listaxcel ul li {
+                    padding-bottom: 2rem;  
+                }
+
+                footer div ul li a {
+                    font-size: 1.3rem;
+                    font-weight: 300;
+                }
+
+                footer .redes{
+                    width: 100%;
+                }
+                footer .redes i{
+                    font-size: 35px;
+                    margin: 1.60rem;
+                    color: #FAFAFA;
+                    height: 100%;            
+                    }
+        footer .FormyCopy p{
+            display: none;
+        }
+
+        footer .FormyCopy {
+            justify-content: center;
         }
         
-        .testimonios h2{                
-            font-size: 3.2rem;  
+        .logoyRedes {
+            display: flex;
+        align-items: center;
+            justify-content: space-evenly;
+            gap: 3.5rem;
         }
+        
+            .logoyRedes::before{
+                content: "Copyright 2020. All Rights Reserved";
+                color: #B3B2B7;   
+                font-size: 1.25rem;
+                font-weight: 300;
+                margin-bottom: 2rem;
+            }
+            
+            .testimonios h2{                
+                font-size: 3.2rem;  
+            }
 /* ////////////////////////////////////////////////////// */
 .marcadeAgua1{
     background-image:url(./images/bg-tablet-pattern.svg);
