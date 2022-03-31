@@ -17,7 +17,6 @@ body{
         -webkit-animation: fade-in-tr 5.6s cubic-bezier(0.645, 0.045, 0.355, 1.000) infinite alternate-reverse both;
         animation: fade-in-tr 5.6s cubic-bezier(0.645, 0.045, 0.355, 1.000) infinite alternate-reverse both;
         z-index: -9;
-
     }
             @-webkit-keyframes fade-in-tr {
                 0% {
@@ -43,8 +42,7 @@ body{
                         transform: translateX(0) translateY(0);
                 opacity: 1;
                 }
-            }
-            
+            }            
 
     .marcadeAgua1{
         background-image:url(./images/bg-tablet-pattern.svg);
@@ -58,8 +56,6 @@ body{
         -webkit-animation: kenburns-top 10s ease-in-out infinite both;
                 animation: kenburns-top 10s ease-in-out infinite both;
     }
-
-
         @-webkit-keyframes kenburns-top {
             0% {
             -webkit-transform: scale(0.5) translateY(0);
@@ -88,114 +84,62 @@ body{
                     transform-origin: top;
             }
         }
-  
-
-
-
-
 /* //////////////////////////////////////////////////// */
-
-
-button.btNaranja {
-    background:   #F3603B;
-    width: 134px;
-    height: 44px;
-    border: none;
-    color: #FFFFFF;
-    border-radius: 5rem;
-    box-shadow: 0px 4px 8px rgba(242, 97, 59, 0.5);
-    font-size: 1.38rem;
-    box-shadow: 0px 0px 10px -2px rgba(88, 88, 88, 0.78);
-
-  }
-
-  .btNaranja:active{
-    cursor:pointer;
-    -webkit-animation: scale-up-top 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: scale-up-top 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-    @-webkit-keyframes scale-up-top {
-        0% {
-        -webkit-transform: scale(0.9);
-                transform: scale(0.9);
-        -webkit-transform-origin: 50% 0%;
-                transform-origin: 50% 0%;
-        }
-        100% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-        -webkit-transform-origin: 50% 0%;
-                transform-origin: 50% 0%;
-        }
+    button.btNaranja {
+        background:   #F3603B;
+        width: 134px;
+        height: 44px;
+        border: none;
+        color: #FFFFFF;
+        border-radius: 5rem;
+        /* box-shadow: 0px 4px 8px rgba(242, 97, 59, 0.5); */
+        font-size: 1.38rem;
+        box-shadow: 0px 0px 10px -2px rgba(88, 88, 88, 0.78);
     }
-    @keyframes scale-up-top {
-        0% {
-        -webkit-transform: scale(0.9);
-                transform: scale(0.9);
-        -webkit-transform-origin: 50% 0%;
-                transform-origin: 50% 0%;
-        }
-        100% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-        -webkit-transform-origin: 50% 0%;
-                transform-origin: 50% 0%;
-        }
+
+    button.btNaranja:active{
+        cursor:pointer;
+        background:rgb(242, 164, 162);
+        -webkit-animation: scale-up-top 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        animation: scale-up-top 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     }
-  
 
+        @-webkit-keyframes scale-up-top {
+            0% {
+            -webkit-transform: scale(0.9);
+                    transform: scale(0.9);
+            -webkit-transform-origin: 50% 0%;
+                    transform-origin: 50% 0%;
+            }
+            100% {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+            -webkit-transform-origin: 50% 0%;
+                    transform-origin: 50% 0%;
+            }
+        }
+        @keyframes scale-up-top {
+            0% {
+            -webkit-transform: scale(0.9);
+                    transform: scale(0.9);
+            -webkit-transform-origin: 50% 0%;
+                    transform-origin: 50% 0%;
+            }
+            100% {
+            -webkit-transform: scale(1);
+                    transform: scale(1);
+            -webkit-transform-origin: 50% 0%;
+                    transform-origin: 50% 0%;
+            }
+        }
 
-.btBlanco {
-    background:  #FFFFFF;
-    color: #F3603B;
-    width: 134px;
-    height: 44px;
-    border: none;
-    border-radius: 5rem;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-    font-size: 1.38rem;
-}
+    .btNaranja:hover {
+        background:  #f56844;
+        cursor: pointer;
+        transform:scale(1.12);
+    }
 
-
-
-.btNaranja:hover {
-    background:  #f56844;
-    cursor: pointer;
-    transform:scale(1.12);
-}
-
-/* .btNaranja:active{
-    transform:scale(0.8);
-    
-    background:  #F3603B;   
-    cursor:pointer;
-    box-shadow: 2px 2px 50px 20px rgb(189, 189, 189);
-   
-} */
-
-
-
-
-.btBlanco:hover {
-    color: rgb(242, 164, 162);
-    cursor: pointer;
-    transform:scale(1.1);
-}
-
-.btBlanco:active {
-    color: #F3603B;   
-    cursor: pointer;
-    transform:scale(1);
-    box-shadow: 2px 2px 40px 5px  #ff8060;  
-    -webkit-animation: scale-up-top 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    animation: scale-up-top 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-
-}
-
-/* //////////////////////////////////////////////////// */
-
-
+    /* //////////////////////////////////////////////////// */
     header {
         display: flex;
         justify-content: space-evenly;
@@ -217,16 +161,14 @@ button.btNaranja {
         color: rgb(35, 44, 81);
         font-weight: 500;
         /* padding:0rem 0.5rem 0rem 0.5rem; */
-
     }
 
     header ul li:hover{
         color: rgb(141, 141, 141);
-        /* color: rgb(168, 167, 173); */
-    cursor: pointer;
-    transform:scale(1.4);
-    padding:0rem -0.1rem 0rem -0.1rem;
-    text-shadow: 0.2px 0.2px 2px rgb(233, 233, 233);
+        cursor: pointer;
+        transform:scale(1.4);
+        padding:0rem -0.1rem 0rem -0.1rem;
+        text-shadow: 0.2px 0.2px 2px rgb(233, 233, 233);
     }
     
     header ul li:active{/* Active decor  */
@@ -236,7 +178,6 @@ button.btNaranja {
     .menu{
         display: none;
     }
-
     
         .menu:active{/* Active decor  */
             transform:scale(1);
@@ -251,9 +192,7 @@ button.btNaranja {
             text-shadow: 0.2px 0.2px 2px rgb(233, 233, 233);
         }
 
-
 /* //////////////////////////////////////////////////// */
-
     main .vitrina{
         display: flex;
         flex-direction: row;
@@ -289,7 +228,6 @@ button.btNaranja {
         background-size: cover;
     }
 
-
 /* //////////////////////////////////////////////////// */
 
     Section.SecManage{
@@ -300,7 +238,6 @@ button.btNaranja {
         flex-wrap: wrap;
         margin-bottom: 5rem;
     }
-
 
     .BlqTituloCopy{
         display: flex;
@@ -314,7 +251,6 @@ button.btNaranja {
         width: 42rem;
         color: rgb(35, 44, 81);
     }
-
 
     .SecManage .BlqTituloCopy p.comentario{
         width: 35.1rem;
@@ -345,7 +281,6 @@ button.btNaranja {
         counter-increment:numerocontador;
     }
 
-
     .SecManage .Blq3textos article h3::before{
         content:"0" counter(numerocontador);
         background: #F3603B;
@@ -357,7 +292,6 @@ button.btNaranja {
         right: 2.5rem;
     }
 
-
     .SecManage .Blq3textos article h3 {
         font-weight: 700;
         font-size: 1.6rem;
@@ -368,14 +302,12 @@ button.btNaranja {
     }
 
 /* //////////////////////////////////////////////////////////// */
-
     section.testimonios {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         gap: 5rem;
-
     }
 
     .testimonios h2 {
@@ -383,7 +315,6 @@ button.btNaranja {
         text-align: center;
         align-items: center;
         color: rgb(35, 44, 81);
-
     }
 
     .segmento{
@@ -406,23 +337,17 @@ button.btNaranja {
             height: 21.9rem;
             margin-top: 4rem;
             /* padding-top: 4rem; */
-
         }
-
 
             .FotoCircular{
                 width: 70px;
                 position: absolute;
-                top: -35px;
-                /* top: 120px; */
-                
-            
+                top: -35px;   
             }
 
             .individuo h5 {
                 font-size: 1.6rem;
                 margin-top: 2rem;
-
             }
 
             .individuo p {
@@ -433,9 +358,7 @@ button.btNaranja {
                     margin: 10.2px 2.1rem 1rem 1rem;
             }
 
-
 /* //////////////////////////////////////////////////// */
-
 .barraNaranja {
     background-color: #F3603B;
     color: #FFFFFF;
@@ -455,8 +378,33 @@ button.btNaranja {
     color: #FAFAFA;
 }
 
-/* //////////////////////////////////////////////////// */
+.btBlanco {
+    background:  #FFFFFF;
+    color: #F3603B;
+    width: 134px;
+    height: 44px;
+    border: none;
+    border-radius: 5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    font-size: 1.38rem;
+}
 
+.btBlanco:hover {
+    color: rgb(242, 164, 162);
+    cursor: pointer;
+    transform:scale(1.1);
+}
+
+.btBlanco:active {
+    color: #F3603B;   
+    cursor: pointer;
+    transform:scale(1);
+    box-shadow: 2px 2px 40px 5px  #ff8060;  
+    -webkit-animation: scale-up-top 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-top 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* //////////////////////////////////////////////////// */
 footer {
     display: flex;
     flex-direction: row;
@@ -480,8 +428,7 @@ footer {
         footer .redes i{
             font-size: 22px;
             margin: 0.5rem;
-            color: #FAFAFA;
-        
+            color: #FAFAFA;        
             }
         
             footer .redes i:hover {
@@ -490,8 +437,7 @@ footer {
         
             footer .redes i:active {
                 color: #F3603B;
-                cursor: pointer;
-        
+                cursor: pointer;        
             }
 
     footer .listaxcel {
@@ -507,9 +453,7 @@ footer {
         }
         
             footer .listaxcel ul li {
-                    padding: 1.2rem;
-            
-
+                    padding: 1.2rem;  
                 }
                     footer div ul li a {
                         font-size: 1.4rem;
@@ -533,8 +477,7 @@ footer {
                         color:  #FAFAFA;
                     }
 
-/* //////////////////////////////////////////////////// */
-
+/* ////////////     Form      /////////////////// */
 footer .FormyCopy {
     display: flex;
     flex-direction: column;
@@ -544,23 +487,15 @@ footer .FormyCopy {
     text-align: right;
     }
 
-    footer .FormyCopy p {
-    font-weight: 500;
-    font-size: 1.25rem;
-    color: #8C8C94;
+footer .FormyCopy form input {
+    width: 20rem;
+    height: 44px;
+    border: none;
+    border-radius: 5rem;
+    padding-left:20px;
 }
 
-/* ////////////     Form      /////////////////// */
-
-input {
-width: 201px;
-height: 44px;
-border: none;
-border-radius: 5rem;
-padding-left:20px;
-}
-
-form button {
+footer .FormyCopy form button {
     background:   #F3603B;
     color: #FFFFFF;
     font-size: 1.6rem;
@@ -570,53 +505,41 @@ form button {
     margin-left: 0.9rem;
 }     
 
-form button:hover{
+footer .FormyCopy form button:hover{
     background:  rgb(249, 143, 117);
     transform:scale(1.1);
     cursor: pointer;
 }
 
-form button:active{
+footer .FormyCopy form button:active{
     background: #F3603B;   
     cursor: pointer;
     transform:scale(1);
     box-shadow: 2px 2px 40px 5px   rgb(63, 65, 82);    
 }
 
-input:focus{
-    font-size: 1.5rem;
-    
+footer .FormyCopy form input:focus{
+    font-size: 1.5rem;    
     }
 
-    input:valid {
+    footer .FormyCopy form input:valid {
         background-color: rgb(92, 255, 173);
         font-weight: 500;
     }
     
-    input:invalid {
+    footer .FormyCopy form input:invalid {
         border-color:#F3603B;
         color: #F3603B;
         font-weight: 500;
-
     }
     
-/* ////////////PseudoClases // Pseudoselectores // Animaciones ///////////////////// */
-
-   /* /////////////////////////////////////////////// */
-
-.otrasredes{
-    width: 2rem;
-    height: 2rem;
-}
-
-
-
-
+    footer .FormyCopy p {
+        font-weight: 500;
+        font-size: 1.25rem;
+        color: #8C8C94;
+    }
 /* //////////////MediaQueris///////////////// */
-
-
 @media (max-width: 1331px){
-
 
 footer .FormyCopy {
     display: flex;
@@ -627,15 +550,12 @@ footer .FormyCopy {
     text-align: center;
     width: 100%;
     }
-
 }
-
-
+/* /////////////////////////////////////////////////////////////////////////////////////// */
 @media (max-width: 776px){
 
     header {
-        justify-content: space-between;
-    
+        justify-content: space-between;    
         margin: 4rem 1rem 3rem 2.5rem;
         }
     
@@ -646,15 +566,13 @@ footer .FormyCopy {
             display: none;
         }
     
-        .menu{
-    
+        .menu{    
             display: unset;
             position: absolute;
             right: 0rem;
             top: 0px;    
         }
     /* ////////////////////////////////////// */
-
         .vitrina{
             flex-wrap: wrap;
         }
@@ -662,20 +580,11 @@ footer .FormyCopy {
         main div div h1 {
             font-size: 3.7rem ;
         }
-
-
-
-
-     
     /* ////////////////////////////////////// */
     .individuo {
         width: 85%;
-        padding: 2px;
-        
+        padding: 2px;        
     }
-
-    
-
     /* ////////////////////////////////////// */
     
     .barraNaranja {
@@ -685,14 +594,11 @@ footer .FormyCopy {
         text-align: center;
         gap: 2rem;
         padding: 6rem 1.5rem 6rem 1.5rem;
-
     }
     
     .barraNaranja h3 {
         font-size: 3.7rem;
-        width: 32rem;
-        
-    
+        width: 32rem;   
     }
         
         /* //////////// */
@@ -705,7 +611,6 @@ gap: 2rem;
 }
 
     .listaxcel {
-
         display: flex;
         flex-direction: row;
         align-items:flex-start;
@@ -720,20 +625,16 @@ gap: 2rem;
         display: flex;
         flex-direction: column-reverse;
         gap: 2rem;
-
     }
 
 
         .redes img{
             margin: 0.4rem;
             gap: 3rem;
-
         } 
     }
 
 /* ////////////////////////////////////// */
-
-
 @media (max-width: 376px) {
 
     .menu{
@@ -749,7 +650,6 @@ gap: 2rem;
         align-items: center;   
         gap: 1rem;         
     }
-
 
     .mainIzq1{
         align-items: center;
@@ -772,9 +672,7 @@ gap: 2rem;
         }
 
         main .vitrina img { /*Cambiar por background image y no poner el img en el hmtl*/
-            max-width: 95%;
-         
-            
+            max-width: 95%; 
         }
   /* ////////////////////////////// */
 
@@ -854,17 +752,13 @@ gap: 2rem;
         color: rgb(35, 44, 81);       
     }
 /* //////////////////////////////////////////////////// */
-
-
 .testimonios h2 {
     font-size:  3.3rem; 
 }
 
 .testimonios .individuo:nth-child(odd) { 
     display: none;
-
 }
-
 /* //////////////////////////////////////////////////// */
 
 .barraNaranja {    
@@ -890,7 +784,7 @@ gap: 2rem;
             align-items: flex-start;
             justify-content:space-between;
         }
-        
+
             footer .listaxcel ul {
                 padding: 0px;
             }
@@ -902,8 +796,7 @@ gap: 2rem;
                 font-size: 30px;
                 margin: 1.77rem;
                 color: #FAFAFA;
-                height: 100%;
-            
+                height: 100%;            
                 }
     footer .FormyCopy p{
         display: none;
@@ -918,12 +811,7 @@ gap: 2rem;
         .testimonios h2{                
             font-size: 3.2rem;  
         }
-
-
 /* ////////////////////////////////////////////////////// */
-
-
-
 .marcadeAgua1{
     background-image:url(./images/bg-tablet-pattern.svg);
     position: absolute;
@@ -932,11 +820,9 @@ gap: 2rem;
     rotate: 50deg;
     transform: scale(0.2);
     z-index: -10;
-    /* animation: move 1s ease-in-out infinite alternate; */
 	-webkit-animation: kenburns-top 10s ease-in-out infinite both;
 	        animation: kenburns-top 10s ease-in-out infinite both;
 }
-
 
  @-webkit-keyframes kenburns-top {
     0% {
@@ -966,16 +852,6 @@ gap: 2rem;
               transform-origin: top;
     }
   }
-  
-
-
-
-
-
-
-
-
-
 /* ////////////////////////////////////////////////////// */
 
 
