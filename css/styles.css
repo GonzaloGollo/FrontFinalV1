@@ -92,9 +92,8 @@ body{
         border: none;
         color: #FFFFFF;
         border-radius: 5rem;
-        /* box-shadow: 0px 4px 8px rgba(242, 97, 59, 0.5); */
+        box-shadow: 0px 4px 8px rgba(242, 97, 59, 0.5);
         font-size: 1.38rem;
-        box-shadow: 0px 0px 10px -2px rgba(88, 88, 88, 0.78);
     }
 
     button.btNaranja:active{
@@ -136,7 +135,9 @@ body{
     .btNaranja:hover {
         background:  #f56844;
         cursor: pointer;
-        transform:scale(1.12);
+        transform: scale(1.1) translateY(-5px); 
+        transition: all 0.1s ease-in-out;
+    
     }
 
     /* //////////////////////////////////////////////////// */
@@ -166,28 +167,29 @@ body{
     header ul li:hover{
         color: rgb(141, 141, 141);
         cursor: pointer;
-        transform:scale(1.4);
+        /* transform:scale(1.4); */
+        transform: scale(1.3) translateY(-5px); 
+        transition: all 0.3s ease-in-out;
         padding:0rem -0.1rem 0rem -0.1rem;
         text-shadow: 0.2px 0.2px 2px rgb(233, 233, 233);
     }
     
     header ul li:active{/* Active decor  */
-        transform:scale(1);
-    }
+        transform: scale(0.9) translateY(2px); 
+        transition: all 0.1s ease-in-out;    }
     
     .menu{
         display: none;
     }
     
-        .menu:active{/* Active decor  */
-            transform:scale(1);
-        }
+       
 
         .menu:hover{
             color: rgb(141, 141, 141);
             /* color: rgb(168, 167, 173); */
             cursor: pointer;
-            transform:scale(1.4);
+            transform: scale(1.1) translateY(-5px); 
+            transition: all 0.1s ease-in-out;            
             padding:0rem 0.5rem 0rem 0.5rem;
             text-shadow: 0.2px 0.2px 2px rgb(233, 233, 233);
         }
@@ -358,6 +360,12 @@ body{
                     margin: 10.2px 2.1rem 1rem 1rem;
             }
 
+            .testimonios .carrousel {
+                display: none;
+            }
+
+
+
 /* //////////////////////////////////////////////////// */
 .barraNaranja {
     background-color: #F3603B;
@@ -392,13 +400,15 @@ body{
 .btBlanco:hover {
     color: rgb(242, 164, 162);
     cursor: pointer;
-    transform:scale(1.1);
+    transform: scale(1.1) translateY(-5px); 
+    transition: all 0.1s ease-in-out;
 }
 
 .btBlanco:active {
     color: #F3603B;   
     cursor: pointer;
-    transform:scale(1);
+    transform: scale(0.9) translateY(-2px); 
+        transition: all 0.1s ease-in-out;
     box-shadow: 2px 2px 40px 5px  #ff8060;  
     -webkit-animation: scale-up-top 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: scale-up-top 0.25s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -466,6 +476,9 @@ footer {
                         color: #F3603B;
                         font-weight: 700;
                         cursor: pointer;
+                        padding:-0.2rem -0.2rem -0.2rem -0.2rem;
+                        transform: scale(1.1) translateY(-1px); 
+                        transition: all 0.1s ease-in-out;
                     }
 
                     footer ul li a:active{
@@ -507,15 +520,17 @@ footer .FormyCopy form button {
 
 footer .FormyCopy form button:hover{
     background:  rgb(249, 143, 117);
-    transform:scale(1.1);
+    transform: scale(1.2) translateY(-2px); 
+    transition: all 0.1s ease-in-out;
     cursor: pointer;
 }
 
 footer .FormyCopy form button:active{
     background: #F3603B;   
     cursor: pointer;
-    transform:scale(1);
-    box-shadow: 2px 2px 40px 5px   rgb(63, 65, 82);    
+    transform: scale(0.95) translateY(1px); 
+    transition: all 0.1s ease-in-out;
+    box-shadow: 1px 1px 20px 3px   rgb(63, 65, 82);    
 }
 
 footer .FormyCopy form input:focus{
@@ -573,9 +588,7 @@ footer .FormyCopy {
             top: 0px;    
         }
     /* ////////////////////////////////////// */
-        .vitrina{
-            flex-wrap: wrap;
-        }
+  
 
         main div div h1 {
             font-size: 3.7rem ;
@@ -759,6 +772,13 @@ gap: 2rem;
 .testimonios .individuo:nth-child(odd) { 
     display: none;
 }
+
+.testimonios .carrousel {
+    display: unset;
+    color: #F3603B;
+}
+
+
 /* //////////////////////////////////////////////////// */
 
 .barraNaranja {    
@@ -767,7 +787,6 @@ gap: 2rem;
     align-items: center;
     margin-top: 3rem;
 }
-    
     .barraNaranja h2 {
         font-size: 3rem;
         width: 85%;        
@@ -852,22 +871,4 @@ gap: 2rem;
               transform-origin: top;
     }
   }
-/* ////////////////////////////////////////////////////// */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
